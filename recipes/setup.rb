@@ -90,7 +90,7 @@ directory "#{node['errbit']['deploy_to']}/shared" do
   mode 00755
 end
 
-%w{ log pids system tmp vendor_bundle scripts config sockets }.each do |dir|
+%w{ log pids system tmp vendor_bundle scripts config/initializers sockets }.each do |dir|
   directory "#{node['errbit']['deploy_to']}/shared/#{dir}" do
     owner node['errbit']['user']
     group node['errbit']['group']
