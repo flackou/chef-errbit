@@ -32,6 +32,7 @@ default['errbit']['config']['allow_comments_with_issue_tracker']  = true
 default['errbit']['config']['display_internal_errors']            = true
 default['errbit']['config']['use_gravatar']                       = true
 default['errbit']['config']['gravatar_default']                   = "identicon"
+default['errbit']['config']['email_delivery_method']              = nil
 
 # errbit github integration
 default['errbit']['config']['github_authentication']  = false
