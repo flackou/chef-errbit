@@ -106,13 +106,13 @@ github_access_scope: <%= @params[:github_access_scope] %>
 # ------------------------------------------------------------------------
 <% if @params[:email_delivery_method] == "smtp" %>
 smtp_settings:
-  address:              <%= @params[:smtp_settings][:address] %>
-  domain:               <%= @params[:smtp_settings][:domain] %>
-  port:                 <%= @params[:smtp_settings][:port] %>
-  authentication:       <%= @params[:smtp_settings][:authentication].to_sym.inspect %>
-  enable_starttls_auto: <%= @params[:smtp_settings][:enable_starttls_auto].to_s %>
-  user_name:            <%= @params[:smtp_settings][:user_name].inspect %>
-  password:             <%= @params[:smtp_settings][:password].inspect %>
+  :address:              <%= @params[:smtp_settings][:address] %>
+  :domain:               <%= @params[:smtp_settings][:domain] %>
+  :port:                 <%= @params[:smtp_settings][:port] %>
+  :authentication:       <%= @params[:smtp_settings][:authentication].to_sym.inspect %>
+  :enable_starttls_auto: <%= @params[:smtp_settings][:enable_starttls_auto].to_s %>
+  :user_name:            <%= @params[:smtp_settings][:user_name].inspect %>
+  :password:             <%= @params[:smtp_settings][:password].inspect %>
 <% end %>
 
 # If you want send your email by your sendmail
